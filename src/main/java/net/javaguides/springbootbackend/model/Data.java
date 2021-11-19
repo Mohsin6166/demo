@@ -2,6 +2,8 @@ package net.javaguides.springbootbackend.model;
 
 public class Data {
 
+    private DrawerDetails drawerDetails;
+    private PromotionModel promotionModel;
     private AppMenuModel appMenuModel;
 
     public AppMenuModel getAppMenuModel() {
@@ -28,7 +30,5 @@ public class Data {
         this.promotionModel = promotionModel;
     }
 
-    private DrawerDetails drawerDetails;
-    private PromotionModel promotionModel;
 
 }

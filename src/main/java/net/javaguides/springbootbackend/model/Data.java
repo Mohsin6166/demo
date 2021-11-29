@@ -1,38 +1,47 @@
-
 package net.javaguides.springbootbackend.model;
 
-import java.util.List;
+import org.springframework.stereotype.Service;
+
+@Service
 
 public class Data {
 
-    private List<AppMenuModel> appMenuModel;
-    private List<DrawerDetails> drawerDetails;
+    private DrawerDetails drawerDetails;
+    private PromotionModel promotionModel;
+    private AppMenuModel appMenuModel;
+    private ProductModel productModel;
 
-    public List<AppMenuModel> getAppMenuModel() {
+    public ProductModel getProductModel() {
+        return productModel;
+    }
+
+    public void setProductModel(ProductModel productModel) {
+        this.productModel = productModel;
+    }
+
+    public AppMenuModel getAppMenuModel() {
         return appMenuModel;
     }
 
-    public void setAppMenuModel(List<AppMenuModel> appMenuModel) {
+    public void setAppMenuModel(AppMenuModel appMenuModel) {
         this.appMenuModel = appMenuModel;
     }
 
-    public List<DrawerDetails> getDrawerDetails() {
+    public DrawerDetails getDrawerDetails() {
         return drawerDetails;
     }
 
-    public void setDrawerDetails(List<DrawerDetails> drawerDetails) {
+    public void setDrawerDetails(DrawerDetails drawerDetails) {
         this.drawerDetails = drawerDetails;
     }
 
-    public List<PromotionModel> getPromotionModel() {
+    public PromotionModel getPromotionModel() {
         return promotionModel;
     }
 
-    public void setPromotionModel(List<PromotionModel> promotionModel) {
+    public void setPromotionModel(PromotionModel promotionModel) {
         this.promotionModel = promotionModel;
     }
-
-    private List<PromotionModel> promotionModel;
 
 
 }

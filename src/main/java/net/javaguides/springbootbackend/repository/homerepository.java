@@ -11,3 +11,4 @@ import java.util.List;
 public interface homerepository extends MongoRepository<HomeModel, String> {
      List<HomeModel> findAll();
 }
+

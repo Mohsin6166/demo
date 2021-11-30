@@ -1,7 +1,9 @@
 package net.javaguides.springbootbackend.model;
 
 import org.springframework.data.annotation.Id;
+import org.springframework.stereotype.Service;
 
+@Service
 public class AppMenuModel {
     @Id
     private int menu_id;

@@ -1,10 +1,23 @@
 package net.javaguides.springbootbackend.model;
 
+import org.springframework.stereotype.Service;
+
+@Service
+
 public class Data {
 
     private DrawerDetails drawerDetails;
     private PromotionModel promotionModel;
     private AppMenuModel appMenuModel;
+    private ProductModel productModel;
+
+    public ProductModel getProductModel() {
+        return productModel;
+    }
+
+    public void setProductModel(ProductModel productModel) {
+        this.productModel = productModel;
+    }
 
     public AppMenuModel getAppMenuModel() {
         return appMenuModel;

@@ -1,5 +1,9 @@
 package net.javaguides.springbootbackend.model;
 
+import org.springframework.stereotype.Service;
+
+@Service
+
 public class PromotionModel {
 
     private String img_url;

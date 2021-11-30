@@ -1,5 +1,8 @@
 package net.javaguides.springbootbackend.model;
 
+import org.springframework.stereotype.Service;
+
+@Service
 public class DrawerDetails {
 
     private String nav_Options;

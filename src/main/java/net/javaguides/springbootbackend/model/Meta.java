@@ -1,5 +1,8 @@
 package net.javaguides.springbootbackend.model;
 
+import org.springframework.stereotype.Service;
+
+@Service
 public class Meta {
     private String status = "200";
     private String code = "200";

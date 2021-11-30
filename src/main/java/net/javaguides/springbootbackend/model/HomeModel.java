@@ -2,7 +2,9 @@ package net.javaguides.springbootbackend.model;
 
 
 import org.springframework.data.mongodb.core.mapping.Document;
+import org.springframework.stereotype.Service;
 
+@Service
 @Document(collection = "homemenus")
 public class HomeModel {
 

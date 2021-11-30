@@ -1,6 +1,7 @@
 package net.javaguides.springbootbackend.repository;
 
 import net.javaguides.springbootbackend.model.HomeModel;
+import net.javaguides.springbootbackend.model.ProductModel;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;
 

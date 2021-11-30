@@ -1,6 +1,7 @@
 package net.javaguides.springbootbackend.controller;
 
 import net.javaguides.springbootbackend.model.*;
+import net.javaguides.springbootbackend.repository.ProductRepository;
 import net.javaguides.springbootbackend.repository.homerepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -13,6 +14,7 @@ public class homeController {
 
     @Autowired
     private homerepository repository;
+    private ProductRepository productRepository;
 
 
     @PostMapping("/addDrawerOption")
@@ -31,6 +33,12 @@ public class homeController {
         HomeModel model = homeModelList.get(0);
         return model;
 
+    }
+    @GetMapping("/allProducts")
+    public ProductModel getProductItems(){
+        List<ProductModel> productModels = productRepository.findAll();
+        ProductModel model = productModels.get(0);
+        return model;
     }
 
 }

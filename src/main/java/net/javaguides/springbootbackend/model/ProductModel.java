@@ -1,5 +1,8 @@
 package net.javaguides.springbootbackend.model;
 
+import org.springframework.data.mongodb.core.mapping.Document;
+
+@Document(collection = "Table")
 public class ProductModel {
 
     String product_name;

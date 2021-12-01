@@ -4,7 +4,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.stereotype.Service;
 
 @Service
-@Document(collection = "Table")
+@Document(collection = "Products")
 public class ProductModel {
 
     String product_name;

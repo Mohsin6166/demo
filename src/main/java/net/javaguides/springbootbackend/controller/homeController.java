@@ -26,6 +26,8 @@ public class homeController {
         return homes;
 
     }
+
+
     @GetMapping("/allDrawerOptions")
     public HomeModel getNavDrawerOptions(){
 
@@ -34,8 +36,15 @@ public class homeController {
         return model;
 
     }
-    @GetMapping("/allProducts")
-    public ProductModel getProductItems(){
+
+    @RequestMapping("/allProductItems")
+    public ProductModel getProductItems(@RequestBody ProductModel productModel){
+        productRepository.save(productModel);
+        return productModel;
+    }
+
+    @GetMapping("/allProductItems")
+    public ProductModel getProduct(){
         List<ProductModel> productModels = productRepository.findAll();
         ProductModel model = productModels.get(0);
         return model;

@@ -14,7 +14,6 @@ public class homeController {
 
     @Autowired
     private homerepository repository;
-    private ProductRepository productRepository;
 
 
     @PostMapping("/addDrawerOption")
@@ -35,19 +34,6 @@ public class homeController {
         HomeModel model = homeModelList.get(0);
         return model;
 
-    }
-
-    @PostMapping("/allProductItems")
-    public ProductModel getProductItems(@RequestBody ProductModel productModel){
-        productRepository.save(productModel);
-        return productModel;
-    }
-
-    @GetMapping("/allProductItems")
-    public ProductModel getProduct(){
-        List<ProductModel> productModels = productRepository.findAll();
-        ProductModel model = productModels.get(0);
-        return model;
     }
 
 }

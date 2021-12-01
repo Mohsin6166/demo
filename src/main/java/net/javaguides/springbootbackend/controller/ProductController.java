@@ -16,7 +16,7 @@ public class ProductController {
     @Autowired
     private ProductRepository productRepository;
 
-    @PostMapping("/allProductItems")
+    @PostMapping("/addProductItems")
     public ProductModel getProductItems(@RequestBody ProductModel productModel){
         productRepository.save(productModel);
         return productModel;

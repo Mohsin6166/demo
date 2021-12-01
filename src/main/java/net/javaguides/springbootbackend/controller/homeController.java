@@ -37,7 +37,7 @@ public class homeController {
 
     }
 
-    @RequestMapping("/allProductItems")
+    @PostMapping("/allProductItems")
     public ProductModel getProductItems(@RequestBody ProductModel productModel){
         productRepository.save(productModel);
         return productModel;

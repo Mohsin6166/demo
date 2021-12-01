@@ -11,7 +11,7 @@ public class Data {
     private List<DrawerDetails> drawerDetails;
     private List<PromotionModel> promotionModel;
     private List<AppMenuModel> appMenuModel;
-    private List<ProductModel> productModel;
+//    private List<ProductModel> productModel;
 
     public List<DrawerDetails> getDrawerDetails() {
         return drawerDetails;
@@ -37,11 +37,11 @@ public class Data {
         this.appMenuModel = appMenuModel;
     }
 
-    public List<ProductModel> getProductModel() {
-        return productModel;
-    }
-
-    public void setProductModel(List<ProductModel> productModel) {
-        this.productModel = productModel;
-    }
+//    public List<ProductModel> getProductModel() {
+//        return productModel;
+//    }
+//
+//    public void setProductModel(List<ProductModel> productModel) {
+//        this.productModel = productModel;
+//    }
 }
